@@ -202,36 +202,7 @@ psql -d chatgpt_clone -U username
 
 Make sure these ports are available or update the configuration.
 
-## Development Notes
 
-### Architecture Decisions
-- **Separation of Concerns**: Clear separation between frontend, backend, and database
-- **Streaming**: Real-time response streaming for better UX
-- **Error Handling**: Comprehensive error handling throughout the stack
-- **Performance**: Optimized database queries and proper indexing
 
-### Assumptions Made
-- Single-user application (no authentication)
-- Local deployment (not containerized)
-- PostgreSQL as primary database
-- Ollama running locally on standard port
 
-### Future Enhancements
-- User authentication and multi-user support
-- Chat export/import functionality
-- Custom model selection
-- Docker containerization
-- Chat sharing capabilities
-- Message search functionality
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details.
