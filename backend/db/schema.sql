@@ -1,0 +1,14 @@
+-- schema.sql
+CREATE TABLE chats (
+  id UUID PRIMARY KEY,
+  title TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE messages (
+  id UUID PRIMARY KEY,
+  chat_id UUID REFERENCES chats(id) ON DELETE CASCADE,
+  role TEXT,
+  content TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
